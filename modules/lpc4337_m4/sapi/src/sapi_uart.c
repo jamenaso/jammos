@@ -536,24 +536,24 @@ void uartWriteString( uartMap_t uart, char* str ){
 
 /*==================[ISR external functions definition]======================*/
 
-__attribute__ ((section(".after_vectors")))
+//__attribute__ ((section(".after_vectors")))
 
 // UART0 (GPIO1 y GPIO2 or RS485/Profibus) 
 // 0x28 0x000000A0 - Handler for ISR UART0 (IRQ 24)
-void UART0_IRQHandler(void){
-   uartProcessIRQ( UART_GPIO );
-}
+//void UART0_IRQHandler(void){
+//   uartProcessIRQ( UART_GPIO );
+//}
 
 // UART2 (USB-UART) or UART_ENET
 // 0x2a 0x000000A8 - Handler for ISR UART2 (IRQ 26)
-void UART2_IRQHandler(void){
-   uartProcessIRQ( UART_USB );
-}
+//void UART2_IRQHandler(void){
+//   uartProcessIRQ( UART_USB );
+//}
 
 // UART3 (RS232)
 // 0x2b 0x000000AC - Handler for ISR UART3 (IRQ 27)
-void UART3_IRQHandler(void){
-   uartProcessIRQ( UART_232 );
-}
+//void UART3_IRQHandler(void){
+//   uartProcessIRQ( UART_232 );
+//}
 
 /*==================[end of file]============================================*/

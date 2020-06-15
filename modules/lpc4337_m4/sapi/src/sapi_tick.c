@@ -145,6 +145,7 @@ void tickPowerSet( bool_t power ){
 //__attribute__ ((section(".after_vectors")))
 
 // SysTick Timer ISR Handler
+/*
 void SysTick_Handler(void) {
 
    tickCounter++;
@@ -154,6 +155,6 @@ void SysTick_Handler(void) {
 	   (* tickHookFunction )( callBackFuncParams );
    }
 
-}
+}*/
 
 /*==================[end of file]============================================*/

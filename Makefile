@@ -32,7 +32,7 @@
 
 -include project.mk
 
-PROJECT ?= examples/blinky
+PROJECT ?= projects/mse_ios1_jamm
 TARGET ?= lpc4337_m4
 BOARD ?= edu_ciaa_nxp
 
